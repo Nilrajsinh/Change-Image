@@ -10,20 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    
-    
     @IBOutlet weak var NextHide: UIButton!
     
     @IBOutlet weak var BackHide: UIButton!
     
-    
-    
     @IBOutlet weak var ImageView: UIImageView!
     
     @IBOutlet weak var Label: UILabel!
-    
-    
     
     @IBOutlet weak var ImageName: UILabel!
     
@@ -35,24 +28,18 @@ class ViewController: UIViewController {
         
         self.imageGallary()
         
-    
     }
     
     
     @IBAction func Back(_ sender: Any) {
         Image -= 1
         Label.text = String("\(Image)")
-       self.imageGallary()
+        self.imageGallary()
         
     }
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         Image = 1
         Label.text = String("\(Image)")
